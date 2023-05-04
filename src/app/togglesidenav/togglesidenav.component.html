@@ -1,0 +1,362 @@
+<!-- <app-header [inputSideNav]="MatSidenav"></app-header> -->
+
+<section class="w3l-top-header">
+	<div class="container-fluid">
+		<div class="row d-flex align-items-center">
+			<div class="top-headers col-8 col-md-3 p-0 float-end">
+				<!-- <ul class="p-0">
+					<li> <a href="#">Help Desk &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+							01412924501</a> </li>
+				</ul> -->
+				<!-- <img src="assets/images/payManager3.png" style="width: 230px; padding-left: 30px; padding-top: 10px; padding-bottom: 10px;" alt="" class="img-fluid"> -->
+				
+			</div>
+			<div class="top-headers col-4 col-md-9 p-0 top-headers-2">
+				<div class="float-end">
+					<ul>
+						<li class="d-none d-md-block"><a href="#">Skip To Content </a></li>
+						<li style="width: 40px;">
+							<div class="dropdown"> <span>EN</span>
+								<div class="dropdown-content p-1">
+									<p class="border-bottom m-0"><a class="text-black">Hindi</a>
+									</p>
+									<p class="m-0"><a class="text-black">English</a></p>
+								</div>
+							</div>
+						</li>
+						<li style="width: 40px;">
+							<div class="dropdown">
+								<span><i class="fa-solid fa-wheelchair" aria-hidden="true"></i></span>
+								<div class="dropdown-content">
+									<div class="access-type">
+										<p class="border-bottom m-0"><a href="javascript:;" class="changer text-black"
+												title="Decrease Text" id="text_resize_decrease"><sup>-</sup>A</a></p>
+										<p class="border-bottom m-0"><a href="javascript:;" class="changer text-black"
+												id="text_resize_reset" title="Reset Text">A</a></p>
+										<p class="border-bottom m-0"><a href="javascript:;" class="changer text-black"
+												id="text_resize_increase" title="Increase Text"><sup>+</sup>A</a></p>
+										<div id="text_resize_clear"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="#youtube"><i class="fa-brands fa-youtube"></i></a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+						</li>
+						<li class="d-none d-lg-block">
+							<a href="#">Help Desk &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+								01412924501</a>
+							<!-- search button -->
+							<!-- <div class="search-right">
+								<form action="#search" method="GET" class="search-box position-relative">
+									<div class="input-search">
+										<input type="search" placeholder="Enter Keyword" name="search"
+											required="required" autofocus="" class="search-popup" />
+									</div>
+									<button type="submit" class="btn search-btn"></button>
+								</form>
+							</div> -->
+							<!-- //search button -->
+						</li>
+						<!-- @author animesh - @change Description - title changed to logout from login  -->
+						<li class="d-none d-md-block"><a class="btn btn-outline-secondary" role="button"
+								title="Logout">Logout</a></li>
+						<!-- <li class="d-none d-md-block" ><a routerLink="/http://ifmstest.rajasthan.gov.in/#/rajasthanSSO/ifms-apps-user/applicant/dashboard
+						">Back to SSO</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="hero header" id="myHeader" >
+	<div class="container-fluid">
+
+
+		<!-- ======= Header ======= -->
+		<div>
+
+			<div class="row" id="navigation">
+				<div class="d-flex align-items-center">
+					
+					<div class="col-9 col-md-9">
+						<img src="assets/images/PayManager.png" style="width: 250px;"  alt="" class="img-fluid">
+						<button type="button" (click)="onToolbarMenuToggle()">Toggle</button>
+					</div>
+
+					<div class="col-3 col-md-3 p-2">
+					
+						<img src="assets/images/99999.png" style="width: 300px;"  alt="" class="img-fluid">
+					</div>
+					
+				</div>
+			</div>
+	
+			<div style="clear:both;"></div>
+		</div>
+		<!-- End Header -->
+
+
+	</div>
+</div>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" class="example-sidenav-content" opened #MatSidenav [class.menu-open] = "isMenuopen" [class.menu-close] = "!isMenuopen">
+        <div class="sidebar ">
+            <aside>
+              <div>
+                <img src="assets/images/profilePhoto.jpg" class="profilePic" alt="">
+                <h5>Lakshyaraj Singh Mewar</h5>
+                <p>Designation:- Prince of Mewar</p>
+    
+              </div>
+           
+               <ul class="sidebar-nav mt-3" id="sidebar-nav">
+           
+                 <li class="nav-item">
+                   <a class="nav-link " routerLink="/Personal-Req/EMP-Dashboard">
+                    <i class="menu-icon mdi mdi-table"></i>
+                    <mat-icon class="matIcon">dashboard</mat-icon><span>Dashboard</span>
+                   </a>
+                 </li><!-- End Dashboard Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                     <i class="bi bi-menu-button-wide"></i><mat-icon class="matIcon">extension</mat-icon><span>Components</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+                   </a>
+                   <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                     <li>
+                       <a href="components-alerts.html">
+                         <i class="bi bi-circle"></i><span>Alerts</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-accordion.html">
+                         <i class="bi bi-circle"></i><span>Accordion</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-badges.html">
+                         <i class="bi bi-circle"></i><span>Badges</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-breadcrumbs.html">
+                         <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-buttons.html">
+                         <i class="bi bi-circle"></i><span>Buttons</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-cards.html">
+                         <i class="bi bi-circle"></i><span>Cards</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-carousel.html">
+                         <i class="bi bi-circle"></i><span>Carousel</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-list-group.html">
+                         <i class="bi bi-circle"></i><span>List group</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-modal.html">
+                         <i class="bi bi-circle"></i><span>Modal</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-tabs.html">
+                         <i class="bi bi-circle"></i><span>Tabs</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-pagination.html">
+                         <i class="bi bi-circle"></i><span>Pagination</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-progress.html">
+                         <i class="bi bi-circle"></i><span>Progress</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-spinners.html">
+                         <i class="bi bi-circle"></i><span>Spinners</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="components-tooltips.html">
+                         <i class="bi bi-circle"></i><span>Tooltips</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </li><!-- End Components Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                     <i class="bi bi-journal-text"></i><mat-icon class="matIcon">extension</mat-icon><span>Forms</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+                   </a>
+                   <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                     <li>
+                       <a href="forms-elements.html">
+                         <i class="bi bi-circle"></i><span>Form Elements</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="forms-layouts.html">
+                         <i class="bi bi-circle"></i><span>Form Layouts</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="forms-editors.html">
+                         <i class="bi bi-circle"></i><span>Form Editors</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="forms-validation.html">
+                         <i class="bi bi-circle"></i><span>Form Validation</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </li><!-- End Forms Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                     <i class="bi bi-layout-text-window-reverse"></i><mat-icon class="matIcon">view_list</mat-icon><span>Tables</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+                   </a>
+                   <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                     <li>
+                       <a href="tables-general.html">
+                         <i class="bi bi-circle"></i><span>General Tables</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="tables-data.html">
+                         <i class="bi bi-circle"></i><span>Data Tables</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </li><!-- End Tables Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                     <i class="bi bi-bar-chart"></i><mat-icon class="matIcon">view_list</mat-icon><span>Charts</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+                   </a>
+                   <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                     <li>
+                       <a href="charts-chartjs.html">
+                         <i class="bi bi-circle"></i><span>Chart.js</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="charts-apexcharts.html">
+                         <i class="bi bi-circle"></i><span>ApexCharts</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="charts-echarts.html">
+                         <i class="bi bi-circle"></i><span>ECharts</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </li><!-- End Charts Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+                     <i class="bi bi-gem"></i><mat-icon class="matIcon">view_list</mat-icon><span>Icons</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+                   </a>
+                   <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                     <li>
+                       <a href="icons-bootstrap.html">
+                         <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="icons-remix.html">
+                         <i class="bi bi-circle"></i><span>Remix Icons</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="icons-boxicons.html">
+                         <i class="bi bi-circle"></i><span>Boxicons</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </li><!-- End Icons Nav -->
+           
+                 <li class="nav-heading" style="color: #1D35B8;">Pages</li>
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="users-profile.html">
+                     <i class="bi bi-person"></i>
+                     <mat-icon class="matIcon">pageview</mat-icon><span>Profile</span>
+                   </a>
+                 </li><!-- End Profile Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-faq.html">
+                     <i class="bi bi-question-circle"></i>
+                     <mat-icon class="matIcon">pageview</mat-icon><span>F.A.Q</span>
+                   </a>
+                 </li><!-- End F.A.Q Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-contact.html">
+                     <i class="bi bi-envelope"></i>
+                     <mat-icon class="matIcon">pageview</mat-icon><span>Contact</span>
+                   </a>
+                 </li><!-- End Contact Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-register.html">
+                     <i class="bi bi-card-list"></i>
+                     <mat-icon class="matIcon">how_to_reg</mat-icon><span>Register</span>
+                   </a>
+                 </li><!-- End Register Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-login.html">
+                     <i class="bi bi-box-arrow-in-right"></i>
+                     <mat-icon class="matIcon">how_to_reg</mat-icon><span>Login</span>
+                   </a>
+                 </li><!-- End Login Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-error-404.html">
+                     <i class="bi bi-dash-circle"></i>
+                     <mat-icon class="matIcon">error</mat-icon><span>Error 404</span>
+                   </a>
+                 </li><!-- End Error 404 Page Nav -->
+           
+                 <li class="nav-item">
+                   <a class="nav-link collapsed" href="pages-blank.html">
+                     <i class="bi bi-file-earmark"></i>
+                     <mat-icon class="matIcon">check_box_outline_blank</mat-icon><span>Blank</span>
+                   </a>
+                 </li><!-- End Blank Page Nav -->
+           
+               </ul>
+           
+             </aside>
+           </div>
+          </mat-sidenav>
+           
+    <mat-sidenav-content class="example-sidenav-content" style=" background-color: rgb(223, 84, 84); width: 100%;">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <!-- <router-outlet></router-outlet> -->

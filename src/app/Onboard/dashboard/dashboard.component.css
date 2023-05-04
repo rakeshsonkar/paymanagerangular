@@ -1,0 +1,129 @@
+/* .dashbox{
+    border: 2px solid #2B4E71;
+    height: 225px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.dashbox:hover{
+    box-shadow: 5px 6px 15px #aaaaaa;
+    border: rgb(87, 86, 86);
+    transition: all .3s;
+    color: black;
+}
+.dashHead{
+    color: #2B4E71;
+}
+.dashboxIcon{
+    position: relative;
+    bottom: 13px;
+    right: 170px;
+    width: 40px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #2B4E71;
+    border-radius: 50%;
+    color: #2B4E71;
+    background-color: #f2fdfd;
+}
+.dashboxIcon01{
+    position: relative;
+    bottom: 13px;
+    right: 300px;
+    width: 40px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #2B4E71;
+    border-radius: 50%;
+    color: #2B4E71;
+    background-color: #f2fdfd;
+} */
+
+.card-icon01 {
+    border-radius: 3px;
+    background-color: #FFAA1D;
+    padding: 15px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left; 
+}
+.card-icon02 {
+    border-radius: 3px;
+    background-color: #CD3700;
+    padding: 15px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left; 
+}
+.card-icon03 {
+    border-radius: 3px;
+    background-color: #FF6103;
+    padding: 15px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left; 
+}
+.card-icon04 {
+    border-radius: 3px;
+    background-color: #03A89E;
+    padding: 15px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left; 
+}
+.stats i{
+    position: relative;
+    top: 5px;
+    color: #00B4DB ;
+}
+.stats small{
+    padding-left: 5px;
+}
+.card-stats{
+  margin-top: 35px;  
+  box-shadow: 3px 7px 8px 2px #d4d3d3;
+  background-color:#5a7e9b;
+  color: #fff;
+}
+.card-footer{
+    border-top: 1px solid #fff;
+}
+.card-chart{
+    margin-top: 35px;
+    box-shadow: 3px 7px 8px 2px #d4d3d3;
+    
+}
+.card-graph-body{
+    background: hsla(210, 61%, 38%, 1);
+    background: linear-gradient(90deg, hsla(210, 61%, 38%, 1) 0%, hsla(210, 61%, 38%, 1) 60%, hsla(205, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(210, 61%, 38%, 1) 0%, hsla(210, 61%, 38%, 1) 60%, hsla(205, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(210, 61%, 38%, 1) 0%, hsla(210, 61%, 38%, 1) 60%, hsla(205, 100%, 50%, 1) 100%);
+    color: #fff;
+}
+.card-graph{
+    background-color: #5a7e9b;
+    color: #fff;
+}
+.card-header-primary{
+    background-color: #26619c;
+    
+    color: #fff;  
+}
+.card{
+    box-shadow: 3px 7px 8px 2px #d4d3d3;
+    border: none;
+}
+.card-header-right{
+    background-color: #26619c;
+    color: #fff;
+}
+.card-graph-text{
+    color: #9FE2BF;
+}
+.card-graph-text i{
+    position: relative;
+    top: 4px;
+}
